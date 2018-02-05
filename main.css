@@ -152,17 +152,15 @@ footer li img {
   margin-top: 20px;
 }
 
-#J02 {
+#B01 {
+  width: 70%;
+  height: auto;
+  margin-left: 15%;
   margin-top: 30px;
-  display: flex;
-  align-items: center;
+  margin-bottom: 20px;
   background-color: #222222;
   color: #ff3300;
-  height: 200px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
+  border: 0;
+  font-size: 60px;
   font-family: 'Bungee', cursive;
-}
-
-#J02 a:link, a:visited, a:hover, a:active {
-  color: #ff3300;
 }
