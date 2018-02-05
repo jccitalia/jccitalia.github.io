@@ -164,3 +164,16 @@ footer li img {
   font-size: 60px;
   font-family: 'Bungee', cursive;
 }
+
+#B02 {
+  width: 70%;
+  height: auto;
+  margin-left: 15%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: #222222;
+  color: #ff3300;
+  border: 0;
+  font-size: 30px;
+  font-family: 'Bungee', cursive;
+}
