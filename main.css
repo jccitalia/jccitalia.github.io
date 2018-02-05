@@ -165,6 +165,11 @@ footer li img {
   font-family: 'Bungee', cursive;
 }
 
+#B01:hover {
+  background-color: #ff3300;
+  color: #222222;
+}
+
 #B02 {
   width: 70%;
   height: auto;
@@ -176,4 +181,9 @@ footer li img {
   border: 0;
   font-size: 30px;
   font-family: 'Bungee', cursive;
+}
+
+#B02:hover {
+  background-color: #ff3300;
+  color: #222222;
 }
