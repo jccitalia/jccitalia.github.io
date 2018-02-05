@@ -151,3 +151,13 @@ footer li img {
   text-align: center;
   margin-top: 20px;
 }
+
+#A05 {
+  display: flex;
+  align-items: center;
+  background-color: #222222;
+  color: #ff3300;
+  height: 200px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  font-family: 'Bungee', cursive;
+}
