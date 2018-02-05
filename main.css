@@ -1,0 +1,153 @@
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  padding: 20px 0;
+  background-color: #222222;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header img {
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav a:link, a:visited, a:hover, a:active {
+  color: #ff3300;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('https://x18349276.github.io/images/07.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  font-family: 'Bungee', cursive;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  text-shadow: none;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+#A01 {
+  margin-left: 33.33%;
+  margin-right: 33.33%;
+}
+
+#A02 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+#A03 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.video {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+}
+
+#HCB_comment_box img {
+  width: 16px;
+}
+
+#A04 {
+  background-color: #222222;
+  color: #ff3300;
+  text-align: center;
+  margin-top: 20px;
+}
