@@ -161,3 +161,7 @@ footer li img {
   text-shadow: 0.25px 0.25px 0.25px #000000;
   font-family: 'Bungee', cursive;
 }
+
+#A05 a:link, a:visited, a:hover, a:active {
+  color: #ff3300;
+}
