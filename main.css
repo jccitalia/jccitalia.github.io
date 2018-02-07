@@ -198,3 +198,7 @@ footer li img {
 #SL01 {
   align-items: center;
 }
+
+#IB01 img:hover {
+  background-color: #ff3300;
+}
