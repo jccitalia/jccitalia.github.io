@@ -202,3 +202,7 @@ footer li img {
 #IB01 img:hover {
   background-color: #ff3300;
 }
+
+#S01 {
+  align-items: flex-end;
+}
