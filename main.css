@@ -163,6 +163,7 @@ footer li img {
   border: 0;
   font-size: 60px;
   font-family: 'Bungee', cursive;
+  transition: 0.3s;
 }
 
 #B01:hover {
@@ -181,6 +182,7 @@ footer li img {
   border: 0;
   font-size: 30px;
   font-family: 'Bungee', cursive;
+  transition: 0.3s;
 }
 
 #B02:hover {
