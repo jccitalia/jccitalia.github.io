@@ -201,6 +201,10 @@ footer li img {
   align-items: center;
 }
 
+#IB01 {
+  transition: 0.3s;
+}
+
 #IB01 img:hover {
   background-color: #ff3300;
 }
