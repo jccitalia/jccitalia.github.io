@@ -193,6 +193,17 @@ footer li img {
   text-align: center;
 }
 
+#H02 {
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#H03 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 #SL01 {
   align-items: center;
 }
@@ -303,4 +314,42 @@ footer li img {
   margin-bottom: 15px;
   margin-left: 12%;
   width: 76%;
+}
+
+@media all and (min-width: 500px) {
+  #T01 {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+    font-size: 25px;
+  }
+}
+
+@media all and (max-width: 499px) {
+  #T01 {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+    font-size: 18px;
+  }
+}
+
+#T01 th {
+  background-color: #222222;
+  color: #ff3300;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#T01 td {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#jccArena {
+  font-size: 30px;
 }
