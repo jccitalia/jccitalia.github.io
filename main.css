@@ -353,3 +353,16 @@ footer li img {
 #jccArena {
   font-size: 30px;
 }
+
+#width100 {
+  width: 100%;
+}
+
+#T02 table, th, td {
+  border: 0px solid black;
+  padding: 5px;
+}
+
+#marginTop30px {
+  margin-top: 30px;
+}
