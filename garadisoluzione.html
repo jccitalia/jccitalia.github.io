@@ -217,28 +217,6 @@ document.gds.punti.value= Y + ", hai ottenuto " + X + " punti. Hai impiegato " +
     </center></div>
 </form>
 
-<?
-$db="rispostegds.txt";
-$a = $_POST['a'];
-$b = $_POST['b'];
-$c = $_POST['c'];
-$d = $_POST['d'];
-
-$risposta = "$a|$b|$c|$d\n";
-
-if(empty($risposta)){
-echo"The field is empty";
-}
-
-else {
-$fp=fopen($db,"a+");
-fwrite($fp,$risposta);
-fclose($fp);
-echo"Il modulo è stato inviato correttamente
-<meta http-equiv='refresh' content='3;URL=http://jccitalia.github.io/garadisoluzione.php'>";
-}
-?>
-
 <footer class="container">
   <div class="row">
     <p class="col-sm-4">&copy; 2018 1<sup>a</sup> JCC Italia</p>
