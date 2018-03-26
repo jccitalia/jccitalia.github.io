@@ -1,13 +1,10 @@
 <?php
-// nome del file in cui inserire i testi
-$file = "./rispostegds.txt";
+// Recupero i valori inseriti nel form
+$punti = $_POST['punti'];
 
-// apre il file in modalità "append", se non esiste lo crea
-$fp = fopen($file, "a");
+// uso la funzione mail di PHP per inviare questi dati al mio indirizzo di posta
+mail('vale18349276@gmail.com', 'Risposta gara di soluzione', $punti);
 
-// inserisce i valori ricevuti dal form in coda al file
-fputs($fp, htmlspecialchars($_POST["a"]) . " " . htmlspecialchars($_POST["b"]) . "\r\n");
-
-// chiude il file
-fclose($fp);
+// Mostro un messaggio di conferma all'utente
+echo 'Al prossimo evento JCC';
 ?>
