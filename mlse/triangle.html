@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>1° JCC Italia | L'innovativa coppa U18</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web|Bungee' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://jccitalia.github.io/main.css" id="theme">
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+<script language="JavaScript">
+
+function init()
+{
+document.gds.a.value="";
+document.gds.b.value="";
+document.gds.c.value="";
+}
+
+function verdict()
+{
+
+A=document.gds.a.value;
+B=document.gds.b.value;
+C=document.gds.c.value;
+A = Number(A);
+B = Number(B);
+C = Number(C);
+
+P=(A+B+C)/2;
+S=P*(P-A)*(P-B)*(P-C);
+X=Math.sqrt(S);
+
+if (A > B+C || B > A+C || C > A+B) {
+  document.gds.punti.value= "The triangle cannot exist because a side is bigger than the sum of the other sides"
+}
+else
+{
+document.gds.punti.value= "The area of the triangle is " + X;
+}
+
+}
+
+</script>
+<form method="POST" name="gds" id="marginTop30px">
+    <div align="center"><center><table id="T02" cellpadding="3" cellspacing="0" width="84%"
+    bgcolor="#E7E3C2">
+        <tr><td><input type="number" placeholder="Side AB" id="width100" name="a"></td></tr>
+        <tr><td><input type="number" placeholder="Side AC" id="width100" name="b"></td></tr>
+        <tr><td><input type="number" placeholder="Side BC" id="width100" name="c"></td></tr>
+        <tr>
+          <td>
+            <input type="button" name="bouton1" value="Go"
+            onclick="verdict()"></font><input type="button"
+            value="Cancel" onclick="init()">
+          </td>
+          <td>
+            <textarea disabled id="width100" name="punti" rows="2" wrap="virtual"></textarea>
+          </td>
+        </tr>
+    </table>
+    </center></div>
+</form>
+
+</body>
+</html>
