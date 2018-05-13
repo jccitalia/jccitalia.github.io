@@ -16,17 +16,17 @@
 
 function init()
 {
-document.gds.a.value="";
-document.gds.b.value="";
-document.gds.c.value="";
+document.trg.a.value="";
+document.trg.b.value="";
+document.trg.c.value="";
 }
 
 function verdict()
 {
 
-A=document.gds.a.value;
-B=document.gds.b.value;
-C=document.gds.c.value;
+A=document.trg.a.value;
+B=document.trg.b.value;
+C=document.trg.c.value;
 A = Number(A);
 B = Number(B);
 C = Number(C);
@@ -36,17 +36,17 @@ S=P*(P-A)*(P-B)*(P-C);
 X=Math.sqrt(S);
 
 if (A > B+C || B > A+C || C > A+B) {
-  document.gds.punti.value= "The triangle cannot exist because a side is bigger than the sum of the other sides"
+  document.trg.punti.value= "The triangle cannot exist because a side is bigger than the sum of the other sides"
 }
 else
 {
-document.gds.punti.value= "The area of the triangle is " + X;
+document.trg.punti.value= "The area of the triangle is " + X;
 }
 
 }
 
 </script>
-<form method="POST" name="gds" id="marginTop30px">
+<form method="POST" name="trg" id="marginTop30px">
     <div align="center"><center><table id="T02" cellpadding="3" cellspacing="0" width="84%"
     bgcolor="#E7E3C2">
         <tr><td><input type="number" placeholder="Side AB" id="width100" name="a"></td></tr>
