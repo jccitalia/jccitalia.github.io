@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>1° JCC Italia | L'innovativa coppa U18</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web|Bungee' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://jccitalia.github.io/main.css" id="theme">
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+<script language="JavaScript">
+
+function init()
+{
+document.pts.a.value="";
+}
+
+function verdict()
+{
+
+A=document.pts.a.value;
+A = Number(A);
+k = 25*(A+10);
+x = 0
+document.pts.punti.value = ""
+
+for (var i = 1; i < A; i++) {
+  x = Math.floor((A-4)*Math.pow(k,(A-i)/(A-1))/2/(A-3)+k*(A-i)*(A-2)/2/(A-1)/(A-3))
+  document.pts.punti.value = document.pts.punti.value + x + " "
+}
+  document.pts.punti.value = document.pts.punti.value + "1"
+}
+
+</script>
+<form method="POST" name="pts" id="marginTop30px">
+    <div align="center"><center><table id="T02" cellpadding="3" cellspacing="0" width="84%"
+    bgcolor="#E7E3C2">
+        <tr><td><input type="number" placeholder="Numero di partecipanti" id="width100" name="a"></td></tr>
+        <tr>
+          <td>
+            <input type="button" name="bouton1" value="Go"
+            onclick="verdict()"></font><input type="button"
+            value="Cancel" onclick="init()">
+          </td>
+          <td>
+            <textarea disabled id="width100" name="punti" rows="2" wrap="virtual"></textarea>
+          </td>
+        </tr>
+    </table>
+    </center></div>
+</form>
+
+</body>
+</html>
