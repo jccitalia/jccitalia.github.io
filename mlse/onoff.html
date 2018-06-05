@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>1° JCC Italia | L'innovativa coppa U18</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web|Bungee' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://jccitalia.github.io/main.css" id="theme">
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+<header class="container-fluid">
+  <div class="row">
+    <div class="col-xs-4 col-sm-2">
+      <a href="https://jccitalia.github.io"><img src="images/08.png"/></a>
+    </div>
+    <nav class="col-xs-8 col-sm-10 text-right">
+      <a href="https://jccitalia.github.io/contatti"><p>Contatti</p></a>
+      <a href="https://jccitalia.github.io/faq"><p>FAQ</p></a>
+      <a href="https://lichess.org/team/jcc-italia" target="_blank"><p>Forum</p></a>
+    </nav>
+  </div>
+</header>
+
+<button type="button" id="B01" class="hidden-xs" onclick="start()">Classifica totale</button>
+
+<footer class="container">
+  <div class="row">
+    <p class="col-sm-4">&copy; 2018 1<sup>a</sup> JCC Italia</p>
+    <div class="col-sm-8">
+      <a href="http://www.hitwebcounter.com" target="_blank">
+      <img src="http://hitwebcounter.com/counter/counter.php?page=6921044&style=0010&nbdigits=5&type=page&initCount=1500" title="Free track counters" Alt="Free track counters"   border="0" >
+      </a>
+    </div>
+    <!-- nascosto
+    <script type="text/javascript">var pos = "bottomright"; var ico = "22_22";</script>
+    <script type="text/javascript" src="https://www.iolecal.it/blog/posts400/post459/tornaSu.js"></script>
+    -->
+  </div>
+</footer>
+
+<script>
+  function start()
+  {
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 1, 2000 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get todays date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now an the count down date
+      var distance = now - countDownDate;
+
+      // Time calculations for days, hours, minutes and seconds
+      var seconds = Math.floor(distance / 1000) % 3;
+
+      if (seconds == 2) {
+        document.getElementById("B01").style.color = "#ffcc00";
+      } else {
+        document.getElementById("B01").style.color = "#ff3300";
+      }
+      }, 1000);
+  }
+</script>
