@@ -367,3 +367,19 @@ footer li img {
 #marginTop30px {
   margin-top: 30px;
 }
+
+#es2a {
+  width: 400px;
+  height: 250px;
+  font-size: 30px;
+  transition: 0.8s;
+  border: 4px dotted black;
+  color: #ff6666;
+  background: yellow;
+}
+
+#es2b {
+  border: 4px dotted black;
+  color: #ff6666;
+  background: yellow;
+}
