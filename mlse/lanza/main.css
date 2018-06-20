@@ -1,0 +1,28 @@
+.droga{
+color: red;
+}
+
+#titolo
+{
+  color: blue;
+  border: 10px dashed;
+  font-size: 60px;
+  background-color: rgba(107, 107, 107, 0.5);
+}
+p
+{
+  color: red;
+  background-color: green;
+  padding-top: 100px;
+  margin: 10px 20px 30px 40px;
+  width: 300px;
+  height: 10%;
+  align-content: center;
+}
+
+img{
+  float: right;
+  padding: 10px;
+  border: 10px  #f56abc solid;
+  margin: 100px;
+}

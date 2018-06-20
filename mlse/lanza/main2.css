@@ -1,0 +1,36 @@
+button{
+  width: 400px;
+  height: 250px;
+  border: 4px dotted #000;
+  color: rgb(135, 45, 45);
+  background-color: yellow;
+  transition: 0.8s;
+  font-size: 40px;
+}
+
+button:hover{
+  color: yellow ;
+  background-color:   rgb(135, 45, 45);
+  font-size: 50px;
+}
+
+ul{
+    border: 4px dotted #000;
+    width: 500px;
+    color: rgb(135, 45, 45);
+    background-color: yellow;
+}
+
+@media(min-width: 720px){
+
+ul{
+      width: 100px;
+      color: rgb(135, 45, 45);
+      background-color: yellow;
+  }
+
+ul:active{
+  border: 4px solid green;
+}
+
+}
