@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>1° JCC Italia | L'innovativa coppa U18</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web|Bungee' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://jccitalia.github.io/main.css" id="theme">
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+<script language="JavaScript">
+function init()
+{
+ document.trg.a.value="";
+ document.trg.b.value="";
+ document.trg.c.value="";
+}
+function verdict()
+{
+ let a=document.trg.a.value;
+ let b=document.trg.b.value;
+ let c=document.trg.c.value;
+ a= Number(a);
+ b= Number(b);
+ c= Number(c);
+ let r= Math.floor(Math.random()*11);
+ document.trg.punti.value= Math.pow(a+r, Math.ceil(b/c));
+}
+
+</script>
+
+<script language="JavaScript">
+var n=20;
+var elementi=new Array(n);
+elementi[0]=1;
+elementi[1]=1;
+document.write("I numeri dispari della sequenza Fibonacci sono: ");
+document.write(elementi[0]+" ");
+document.write(elementi[1]+" ");
+for(i=2;i<elementi.length;i++) { elementi[i]=elementi[i-1]+elementi[i-2]; document.write(elementi[i]+" "); }
+</script>
+
+
+<script>
+var c1='#E0E4E3'
+var c2='navy'
+function colore1(){
+codice='<font color=' + c1+ '><b>TESTO LAMPEGGIANTE</b></font>'
+if(document.all)
+{
+document.all('testo').innerHTML=codice;
+}
+else if(document.getElementById){
+document.getElementById("testo").innerHTML = codice
+}
+attesa = window.setTimeout("colore2()",500);
+}
+function colore2(){
+codice='<font color=' + c2 + '><b>TESTO LAMPEGGIANTE</b></font>'
+if(document.all)
+{
+document.all('testo').innerHTML=codice;
+}
+else if(document.getElementById){
+document.getElementById("testo").innerHTML =codice
+}
+attesa = window.setTimeout("colore1()",500)
+}
+function avvia()
+{
+attesa = window.setTimeout("colore1()",500);
+}
+</script>
+
+
+
+
+<form method="POST" name="trg" id="marginTop30px">
+    <div align="center"><center><table id="T02" cellpadding="3" cellspacing="0" width="84%"
+    bgcolor="#E7E3C2">
+        <tr><td><input type="text" placeholder="Value 1" id="width100" name="a"></td></tr>
+        <tr><td><input type="text" placeholder="Value 2" id="width100" name="b"></td></tr>
+        <tr><td><input type="text" placeholder="Value 3" id="width100" name="c"></td></tr>
+        <tr>
+          <td>
+            <input type="button" name="bouton1" value="Go"
+            onclick="verdict()"></font><input type="button"
+            value="Cancel" onclick="init()">
+          </td>
+          <td>
+            <textarea disabled id="width100" name="punti" rows="2" wrap="virtual"></textarea>
+          </td>
+        </tr>
+    </table>
+    </center></div>
+</form>
+
+</body>
+</html>

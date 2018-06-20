@@ -1,0 +1,26 @@
+button {
+  width: 400px;
+  height: 250px;
+  border: 4px dotted black;
+  color: #990e04;
+  transition: 0.8;
+  background-color: yellow;
+}
+ul {
+  border: 4px dotted black;
+  color: #990e04;
+  background-color: yellow;
+}
+}
+h1 {
+  font-size: 40px;
+}
+button:hover {
+  background-color: #990e04;
+  color: yellow;
+  font-size: 50px;
+}
+ul:active {
+  border: 4px dotted green;
+  min-width: 720px;
+}

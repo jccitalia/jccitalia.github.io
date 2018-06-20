@@ -1,0 +1,15 @@
+h1 {
+font-family:'BioRhyme Expanded', serif;
+color:red;
+font-size: 60px;
+border: 10px solid blue;
+padding: 5%;
+margin: 5%;
+float: right;
+}
+h2 {
+font-family:'BioRhyme Expanded', serif;
+color:rgb(69,69,69);
+font-size: 20px;
+margin: 10%
+}
