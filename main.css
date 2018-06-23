@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('https://fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2'), /* Super Modern Browsers */
+}
+
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'MyWebFont', 'Titillium Web';
   font-weight: 300;
 }
 
@@ -45,7 +50,6 @@ header p {
   color: #ffffff;
   height: 500px;
   text-shadow: 0.25px 0.25px 0.25px #000000;
-  font-family: 'Bungee', cursive;
 }
 
 .jumbotron h2 {
