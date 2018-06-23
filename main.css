@@ -50,6 +50,7 @@ header p {
   color: #ffffff;
   height: 500px;
   text-shadow: 0.25px 0.25px 0.25px #000000;
+  font-family: 'MyWebFont', 'Bungee';
 }
 
 .jumbotron h2 {
