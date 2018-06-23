@@ -163,7 +163,7 @@ footer li img {
   color: #ff3300;
   border: 0;
   font-size: 60px;
-  font-family: 'Bungee', cursive;
+  font-family: 'MyWebFont', 'Bungee';
   transition: 0.3s;
 }
 
@@ -182,7 +182,7 @@ footer li img {
   color: #ff3300;
   border: 0;
   font-size: 30px;
-  font-family: 'Bungee', cursive;
+  font-family: 'MyWebFont', 'Bungee';
   transition: 0.3s;
 }
 
