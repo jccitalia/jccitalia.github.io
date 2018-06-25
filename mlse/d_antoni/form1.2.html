@@ -1,0 +1,58 @@
+<!DOCTYPE html> <html> <head> <meta charset="utf-8"/> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> <link rel="stylesheet" type="text/css" href="2.css"> </head>
+
+<html>
+<head>
+  <title>1° JCC Italia | L'innovativa coppa U18</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web|Bungee' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://jccitalia.github.io/main.css" id="theme">
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+<script language="JavaScript">
+
+function init()
+{document.trg.a.value='';
+document.trg.b.value='';
+document.trg.c.value='';
+document.trg.punti.value='';
+
+}
+
+function verdict()
+{
+  a=Number(document.trg.a.value);
+  b=Number(document.trg.b.value);
+  c=Number(document.trg.c.value);
+  if (b==0){document.trg.punti.value= 'la divisione è impossibile, denominatore uguale a 0';}
+  else {let x = (a+c)/b;
+        document.trg.punti.value = x;}
+
+}
+</script>
+<form method="POST" name="trg" id="marginTop30px">
+    <div align="center"><center><table id="T02" cellpadding="3" cellspacing="0" width="84%"
+    bgcolor="#E7E3C2">
+        <tr><td><input type="number" placeholder="Value 1" id="width100" name="a"></td></tr>
+        <tr><td><input type="number" placeholder="Value 2" id="width100" name="b"></td></tr>
+        <tr><td><input type="number" placeholder="Value 3" id="width100" name="c"></td></tr>
+        <tr>
+          <td>
+            <input type="button" name="bouton1" value="Go"
+            onclick="verdict()"></font><input type="button"
+            value="Cancel" onclick="init()">
+          </td>
+          <td>
+            <textarea disabled id="width100" name="punti" rows="2" wrap="virtual"></textarea>
+          </td>
+        </tr>
+    </table>
+    </center></div>
+</form>
+
+</body>
+</html>

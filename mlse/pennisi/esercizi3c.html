@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<button>
+<head>
+  <title>Esercizi 3</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="esercizi3c.css">
+
+  <script language=javascript>
+  var c1='red'
+  var c2='yellow'
+  function colore1(){
+  codice='<font color=' + c1+ '><b>TESTO LAMPEGGIANTE</b></font>'
+  if(document.all)
+  {
+  document.all('testo').innerHTML=codice;
+  }
+  else if(document.getElementById){
+  document.getElementById("testo").innerHTML = codice
+  }
+  attesa = window.setTimeout("colore2()",2000);
+  }
+  function colore2(){
+  codice='<font color=' + c2 + '><b>TESTO LAMPEGGIANTE</b></font>'
+  if(document.all)
+  {
+  document.all('testo').innerHTML=codice;
+  }
+  else if(document.getElementById){
+  document.getElementById("testo").innerHTML =codice
+  }
+  attesa = window.setTimeout("colore1()",1000)
+  }
+  function avvia()
+  {
+  attesa = window.setTimeout("colore1()",2000);
+  }
+  </script>
+
+</head>
+
+<BODY OnLoad="avvia()">
+
+<span id="testo"><b><font color=red>TESTO LAMPEGGIANTE</b> </font></span>
+
+</BODY OnLoad="avvia()">
+</button>
+</html>

@@ -1,0 +1,15 @@
+
+button {width:400px;height:250px;color: #4d0000 ;background-color:yellow;border : 4px dotted Black; font-size: 40px;transition:0.8s;}
+ul{
+border : 4px dotted Black;
+background: yellow;
+width: 300px;
+}ul
+body{background-color: white;}
+
+button:hover{background-color:#4d0000;color:yellow;font-size:50px;}
+@media (min-width: 721px) {
+
+ul:active{border-color: green;}
+
+}

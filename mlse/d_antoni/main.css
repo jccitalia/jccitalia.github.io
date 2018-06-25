@@ -1,0 +1,15 @@
+body {background-color:orange}
+h1 {font-family:'titillium web';}
+.center {border-style: solid; border-width: 3px; border-color: purple; padding: 10px; width: 50%;}
+table, th, td {border: 1px dotted black;}
+th, td {padding: 10px; text-align: center;}
+button {color:purple; font-family: 'helvetica'; font-size: 30px;}
+a:hover {color: red;}
+
+@media (min-width; 720px) {p{coor: red}}
+@media (max-width; 719px) {h1{font-size: 25px}}
+
+div {width: 100px;
+height: 100px; background-color: yellow; transition: 1s;}
+div:hover {width: 500px; background-color: pink;}
+div:active {width: 1000px; background-color: black;}

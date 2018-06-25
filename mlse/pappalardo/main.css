@@ -1,0 +1,44 @@
+.right {
+  float: right;
+  margin-right: 30px;
+  margin-top: 30px;
+  padding: 10px;
+  border: 3px solid #0088ff;
+}
+
+.esercizi1 h1, p {
+  font-family: 'Noto Sans';
+  background-color: black;
+  color: orange;
+}
+
+a:hover {
+  color: yellow;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+table {
+    width: 50%;
+  margin-left: 25%;
+}
+
+@media(max-width:900px){
+  h2{
+    font-size: 25px;
+  }
+}
+body{background-color: white}
+#transition {
+  width:100px;
+  height:120px;
+  background-color: yellow;
+  transition: 3s;
+}
+#transition:hover{
+  width: 400px;
+  background: black;
+}

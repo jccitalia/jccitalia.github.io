@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calcolo X</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web|Bungee' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://jccitalia.github.io/main.css" id="theme">
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+<script language="JavaScript">
+
+function init()
+{
+let y = '';
+document.trg.a.value = y;
+document.trg.b.value = y;
+document.trg.c.value = y;
+document.trg.punti.value = y;
+//si può anche togliere let y = "" e doc.... = y
+//mettendo soltanto le virgolette vuote doc... = ""
+}
+
+function verdict()
+{
+A=document.trg.a.value;
+B=document.trg.b.value;
+C=document.trg.c.value;
+A = Number(A);
+B = Number(B);
+C = Number(C);
+
+X=((A+C)/B);
+
+if (B==0) {
+  document.trg.punti.value= "La divisione è impossibile perché il denominatore è uguale a 0";
+}
+else
+{
+document.trg.punti.value= "Il risultato è " + X;
+}
+
+}
+
+
+</script>
+<form method="POST" name="trg" id="marginTop30px">
+    <div align="center"><center><table id="T02" cellpadding="3" cellspacing="0" width="84%"
+    bgcolor="#E7E3C2">
+        Dati 3 Numeri <br>
+        <tr><td><input type="number" placeholder="Valore 1" id="width100" name="a"></td></tr>
+        <tr><td><input type="number" placeholder="Valore 2" id="width100" name="b"></td></tr>
+        <tr><td><input type="number" placeholder="Valore 3" id="width100" name="c"></td></tr>
+        <tr>
+          La somma del primo e del terzo diviso il secondo
+          <td>
+            <input type="button" name="bouton1" value="Go"
+            onclick="verdict()"></font><input type="button"
+            value="Cancel" onclick="init()">
+          </td>
+          <td>
+            <textarea disabled id="width100" name="punti" rows="2" cols="10" wrap="virtual"></textarea>
+          </td>
+        </tr>
+    </table>
+    </center></div>
+</form>
+
+</body>
+</html>

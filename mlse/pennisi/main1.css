@@ -1,0 +1,5 @@
+h1 {color:blue;}
+div {border: 5px solid red;  padding: 10px; transition: 1s;}
+div:hover{border: 10px dotted green;}
+div:active{border: 15px dashed purple;}
+#img2{width: 275px; height: 95px;}
