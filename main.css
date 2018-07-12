@@ -220,6 +220,7 @@ footer li img {
 
 #IB01 img:hover {
   background-color: #ff3300;
+  border-radius: 20%;
 }
 
 #E01 {
