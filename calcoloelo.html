@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>1° JCC Italia | L'innovativa coppa U18</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Product+Sans|Titillium+Web|Bungee' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://jccitalia.github.io/main.css" id="theme">
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+<script language="JavaScript">
+
+function init()
+{
+document.elo.a.value="";
+document.elo.b.value="";
+document.elo.c.value="";
+document.elo.d.value="";
+document.elo.e.value="";
+document.elo.f.value="";
+document.elo.g.value="";
+document.elo.h.value="";
+document.elo.i.value="";
+document.elo.j.value="";
+document.elo.k.value="40";
+document.elo.p.value="";
+document.elo.r.value="";
+document.elo.output.value="";
+}
+
+function verdict()
+{
+
+A=document.elo.a.value;
+B=document.elo.b.value;
+C=document.elo.c.value;
+D=document.elo.d.value;
+E=document.elo.e.value;
+F=document.elo.f.value;
+G=document.elo.g.value;
+H=document.elo.h.value;
+I=document.elo.i.value;
+J=document.elo.j.value;
+K=document.elo.k.value;
+P=document.elo.p.value;
+R=document.elo.r.value;
+A = Number(A);
+B = Number(B);
+C = Number(C);
+D = Number(D);
+E = Number(E);
+F = Number(F);
+G = Number(G);
+H = Number(H);
+I = Number(I);
+J = Number(J);
+K = Number(K);
+P = Number(P);
+R = Number(R);
+a = 0;
+b = 0;
+c = 0;
+d = 0;
+e = 0;
+f = 0;
+g = 0;
+h = 0;
+i = 0;
+j = 0;
+if (A !== 0) {
+  a = Math.round(100/(Math.pow(10, (A-P)/400)+1))/100;
+}
+if (B !== 0) {
+  b = Math.round(100/(Math.pow(10, (B-P)/400)+1))/100;
+}
+if (C !== 0) {
+  c = Math.round(100/(Math.pow(10, (C-P)/400)+1))/100;
+}
+if (D !== 0) {
+  d = Math.round(100/(Math.pow(10, (D-P)/400)+1))/100;
+}
+if (E !== 0) {
+  e = Math.round(100/(Math.pow(10, (E-P)/400)+1))/100;
+}
+if (F !== 0) {
+  f = Math.round(100/(Math.pow(10, (F-P)/400)+1))/100;
+}
+if (G !== 0) {
+  g = Math.round(100/(Math.pow(10, (G-P)/400)+1))/100;
+}
+if (H !== 0) {
+  h = Math.round(100/(Math.pow(10, (H-P)/400)+1))/100;
+}
+if (I !== 0) {
+  i = Math.round(100/(Math.pow(10, (I-P)/400)+1))/100;
+}
+if (J !== 0) {
+  j = Math.round(100/(Math.pow(10, (J-P)/400)+1))/100;
+}
+W = Math.round(K*(R-(a+b+c+d+e+f+g+h+i+j)));
+S = P + W;
+document.elo.output.value = "La variazione Elo è " + W + " e il tuo nuovo Elo è " + S;
+
+}
+
+</script>
+<form method="POST" name="elo" id="marginTop30px">
+    <div align="center"><center><table id="T02" cellpadding="3" cellspacing="0" width="84%"
+    bgcolor="#E7E3C2">
+        <tr><td><input type="number" placeholder="Elo di partenza" id="width100" name="p"></td></tr>
+        <tr><td><input type="number" placeholder="Punti totalizzati" id="width100" name="r"></td></tr>
+        <tr><td><select name="k">
+                  <option value="40">k = 40</option>
+                  <option value="30">k = 30</option>
+                  <option value="25">k = 25</option>
+                  <option value="20">k = 20</option>
+                  <option value="15">k = 15</option>
+                  <option value="10">k = 10</option>
+                </select></td></tr>
+        <tr><td><input type="number" placeholder="Avversario 1" id="width100" name="a"></td></tr>
+        <tr><td><input type="number" placeholder="Avversario 2" id="width100" name="b"></td></tr>
+        <tr><td><input type="number" placeholder="Avversario 3" id="width100" name="c"></td></tr>
+        <tr><td><input type="number" placeholder="Avversario 4" id="width100" name="d"></td></tr>
+        <tr><td><input type="number" placeholder="Avversario 5" id="width100" name="e"></td></tr>
+        <tr><td><input type="number" placeholder="Avversario 6" id="width100" name="f"></td></tr>
+        <tr><td><input type="number" placeholder="Avversario 7" id="width100" name="g"></td></tr>
+        <tr><td><input type="number" placeholder="Avversario 8" id="width100" name="h"></td></tr>
+        <tr><td><input type="number" placeholder="Avversario 9" id="width100" name="i"></td></tr>
+        <tr><td><input type="number" placeholder="Avversario 10" id="width100" name="j"></td></tr>
+        <tr>
+          <td>
+            <input type="button" name="bouton1" value="Calcola"
+            onclick="verdict()"></font><input type="button"
+            value="Cancella" onclick="init()">
+          </td>
+          <td>
+            <textarea disabled id="width100" name="output" rows="2" wrap="virtual"></textarea>
+          </td>
+        </tr>
+    </table>
+    </center></div>
+</form>
+
+</body>
+</html>
