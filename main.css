@@ -45,7 +45,7 @@ header p {
   color: #ffffff;
   height: 500px;
   text-shadow: 0.25px 0.25px 0.25px #000000;
-  font-family: 'MyWebFont', 'Bungee';
+  font-family: 'Montserrat';
 }
 
 .jumbotron h2 {
@@ -158,7 +158,7 @@ footer li img {
   color: #ff3300;
   border: 0;
   font-size: 60px;
-  font-family: 'MyWebFont', 'Bungee';
+  font-family: 'Montserrat';
   transition: 0.3s;
 }
 
