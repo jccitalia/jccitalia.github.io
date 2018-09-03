@@ -1,11 +1,5 @@
-@font-face {
-  font-family: 'MyWebFont';
-  src: url('GoogleSans-Regular.ttf') format('ttf'),
-       url('https://fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2') format('woff2'); /* Super Modern Browsers */
-}
-
 body {
-  font-family: 'MyWebFont', 'Titillium Web';
+  font-family: 'Montserrat';
   font-weight: 300;
 }
 
