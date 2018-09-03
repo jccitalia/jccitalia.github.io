@@ -24,7 +24,6 @@ header img {
 }
 
 header nav {
-  display: flex;
   justify-content: flex-end;
 }
 
