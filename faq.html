@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,500' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="faq.css">
   <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 <body>
@@ -23,8 +24,60 @@
   </div>
 </header>
 
-<script src="//www.powr.io/powr.js?external-type=html"></script>
-<div class="powr-faq" id="847ff21e_1518345194"></div>
+<!-- <script src="//www.powr.io/powr.js?external-type=html"></script>
+<div class="powr-faq" id="847ff21e_1518345194"></div> -->
+
+<button class="accordion">Cos'è la JCC?</button>
+<div class="panel">
+  <p>La JCC (Junior Chess Cup) è una serie di tornei, gare di soluzione e simultanee di scacchi online riservati ai ragazzi U18. Le iscrizioni sono sempre aperte.</p>
+</div>
+
+<button class="accordion">Quando si svolgono gli eventi JCC?</button>
+<div class="panel">
+  <p>
+    Si svolgono la domenica alle ore 17, precisamente:<br>
+    1a e 3a domenica del mese: torneo<br>
+    2a domenica del mese: gara di soluzione<br>
+    4a domenica del mese: simultanea<br>
+    Il programma potrebbe subire variazioni. Per controllare la data del prossimo evento JCC clicca <a href="https://jccitalia.github.io/countdown">qui</a>
+  </p>
+</div>
+
+<button class="accordion">Posso giocare anche se non è domenica?</button>
+<div class="panel">
+  <p>
+    Sì. Non sono in corso tornei o altri eventi, ma hai due modi per giocare:<br>
+    1) Clicca sul tasto "Sfidami" per giocare contro Valerio Stancanelli, l'amministratore del sito<br>
+    2) Vai alla pagina "I partecipanti alla JCC": puoi sfidare uno qualsiasi dei partecipanti (l'icona verde indica chi è online)
+  </p>
+</div>
+
+<button class="accordion">Cos'è la sezione "La Partitazza"?</button>
+<div class="panel">
+  <p>La sezione "La Partitazza" contiene alcuni video di partite live commentate.</p>
+</div>
+
+<button class="accordion">Hai altri dubbi?</button>
+<div class="panel">
+  <p><a href="https://jccitalia.github.io/contatti">Contattami</a>, ti risponderò prima possibile.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
 
 <footer class="container">
   <div class="row">
